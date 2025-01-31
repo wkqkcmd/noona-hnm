@@ -1,0 +1,107 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* 네브바 */
+.header{
+  margin: 1em;
+}
+
+.side-menu{
+  display: none;
+}
+
+.top-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list {
+  margin: 1em;
+}
+
+
+.search-box {
+  border-bottom: 1px solid gray;
+  margin-left: 1em;
+}
+
+.search-box input {
+  border: none;
+  width: 150px;
+}
+
+.search-box input:focus {
+  outline: none;
+}
+
+
+.hide{
+  visibility: hidden;
+}
+
+/* main */
+.card{
+  width: 100%;
+  border: none !important;
+  margin-bottom: 1em;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+
+
+.login-area{
+  cursor: pointer;
+}
+
+.product-detail-img img{
+  width: 100%;
+}
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+/* 미디어쿼리 */
+
+@media screen and (max-width: 63rem){
+  .hide{
+    visibility: visible;
+  }
+  .menu-area,.search-box{
+    display: none;
+  }
+
+  .side-menu{
+    display: block;
+    z-index: 1;
+    background-color: wheat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .closebtn,.bar{
+    cursor: pointer;
+  }
+
+}
